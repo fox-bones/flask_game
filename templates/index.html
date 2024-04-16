@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/index.css" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <section id="header">
+        <h1>Rock, Paper, Scissors, Dynamite, Drill</h1>
+        <p>Paper/Dynamite beat Rock</p>
+        <p>Scissors/Drill beat Paper</p>
+        <p>Drill/Rock beat Scissors</p>
+        <p>Scissors/Paper beat Dynamite</p>
+        <p>Rock/Dynamite beat Drill</p>
+        <p>The first to five points wins the game.</p>
+    </section>
+    <hr>
+    <section id="game">
+        <p>{{player_choice_message}}</p>
+        <form method="POST" action="/">
+            <input type="radio" id="rock" name="choice" value="rock" checked>
+            <label for="rock">Rock</label><br>
+            <input type="radio" id="paper" name="choice" value="paper">
+            <label for="paper">Paper</label><br>
+            <input type="radio" id="scissors" name="choice" value="scissors">
+            <label for="scissors">Scissors</label><br>
+            <input type="radio" id="dynamite" name="choice" value="dynamite">
+            <label for="dynamite">Dynamite</label><br>
+            <input type="radio" id="drill" name="choice" value="drill">
+            <label for="drill">Drill</label><br>
+            <br>
+            <input type="submit" value="SHOOT">
+        </form>
+        <p>{{computer_choice_message}}</p>
+    </section>
+    <p id="message">{{message}}</p>
+    <p id="player_score">Player score: {{player_score}}</p>
+    <p id="computer_score">Computer score: {{computer_score}}</p>
+</body>
+</html>

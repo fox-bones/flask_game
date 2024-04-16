@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/index.css" rel="stylesheet">
+    <title>Game</title>
+</head>
+<body>
+    <section id="header">
+        <h1>Rock, Paper, Scissors, Dynamite, Drill</h1>
+        <p>Paper/Dynamite beat Rock</p>
+        <p>Scissors/Drill beat Paper</p>
+        <p>Drill/Rock beat Scissors</p>
+        <p>Scissors/Paper beat Dynamite</p>
+        <p>Rock/Dynamite beat Drill</p>
+    </section>
+    <hr>
+    <section id="game">
+        <form method="GET" action="/">
+            <input type="submit" value="Play again?">
+        </form>
+    </section>
+    <p id="winning">{{winning_message}}</p>
+</body>
+</html>
